@@ -10,7 +10,6 @@ This project was built using:
 - Basic JavaScript (for UI interactions)
 - Responsive Admin Dashboard Layout
 
-
 ## Project Overview
 
 FuelChain Pro is a professional petroleum management interface that allows administrators to:
@@ -20,6 +19,12 @@ FuelChain Pro is a professional petroleum management interface that allows admin
 - Track delivery activities
 - Manage price updates
 - Login to an admin dashboard
+
+    ## author
+  name: komezusenge byiringiro
+  reg no: 25RP00634
+  module:frontend development
+  
 
 This version focuses 100% on frontend development.
 
