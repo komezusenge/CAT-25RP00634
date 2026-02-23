@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FuelChain Pro - Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900">
+
+<div class="min-h-screen flex">
+
+  <!-- Left Branding Section -->
+  <div class="hidden md:flex w-1/2 bg-gradient-to-br from-gray-800 to-gray-900 text-white flex-col justify-center items-center p-10">
+    <h1 class="text-4xl font-bold text-green-400 mb-4">FuelChain Pro</h1>
+    <p class="text-gray-400 text-center max-w-md">
+      Smart Fuel & Oil Management System for Petrol Stations and Oil Distributors.
+      Monitor stock, track deliveries, and analyze sales performance in one powerful dashboard.
+    </p>
+
+    <div class="mt-10">
+      <div class="w-40 h-40 rounded-full bg-green-500 opacity-20 animate-pulse"></div>
+    </div>
+  </div>
+
+  <!-- Right Login Form -->
+  <div class="flex w-full md:w-1/2 justify-center items-center bg-gray-900 p-8">
+
+    <div class="w-full max-w-md bg-gray-800 p-8 rounded-2xl shadow-lg">
+
+      <h2 class="text-2xl font-semibold text-white mb-6 text-center">
+        Login to Dashboard
+      </h2>
+
+      <!-- Email -->
+      <div class="mb-5">
+        <label class="block text-gray-400 mb-2">Email</label>
+        <input 
+          type="email"
+          placeholder="admin@fuelchain.com"
+          class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+        >
+      </div>
+
+      <!-- Password -->
+      <div class="mb-5 relative">
+        <label class="block text-gray-400 mb-2">Password</label>
+        <input 
+          id="password"
+          type="password"
+          placeholder="••••••••"
+          class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-green-500"
+        >
+        <button 
+          type="button"
+          onclick="togglePassword()"
+          class="absolute right-3 top-10 text-gray-400 hover:text-green-400"
+        >
+          Show
+        </button>
+      </div>
+
+      <!-- Remember + Forgot -->
+      <div class="flex justify-between items-center mb-6 text-sm">
+        <label class="flex items-center text-gray-400">
+          <input type="checkbox" class="mr-2 accent-green-500">
+          Remember me
+        </label>
+        <a href="#" class="text-green-400 hover:underline">
+          Forgot password?
+        </a>
+      </div>
+
+      <!-- Login Button -->
+     <button 
+  onclick="loginUser()"
+  class="w-full bg-green-500 hover:bg-green-600 text-white p-3 rounded-lg font-semibold transition duration-300">
+  Sign In
+</button>
+
+      <!-- Footer -->
+      <p class="text-gray-500 text-center mt-6 text-sm">
+        © 2026 FuelChain Pro. All rights reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  function togglePassword() {
+    const password = document.getElementById("password");
+    if (password.type === "password") {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
+  }
+
+  function loginUser() {
+    // Simple frontend redirect simulation
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
